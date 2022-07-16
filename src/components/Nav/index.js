@@ -4,14 +4,14 @@ function Nav() {
     return (
         <header>
             <h2>
-                <a href="/">
+                <a data-testid='link' href="/">
                     Phil Pepin
                 </a>
             </h2>
             <nav>
                 <ul>
                     <li>
-                        <a href="#about">
+                        <a data-testid='about' href="#about">
                             About Me
                         </a>
                     </li>
