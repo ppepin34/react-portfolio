@@ -18,6 +18,12 @@ function Nav() {
                     <li>
                         <span>Contact</span>
                     </li>
+                    <li>
+                            <span>Portfolio</span>
+                    </li>
+                    <li>
+                        <span>Resume</span>
+                    </li>
                 </ul>
             </nav>
         </header>
