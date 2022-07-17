@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-function Nav() {
+function Nav(props) {
+    const {
+        pages = [],
+        setCurrentPage,
+        currentPage,
+    } = props;
+
+    useEffect(() => {
+        document.title = currentPage.name
+    }, [currentPage]);
+
     return (
         <header>
             <h2>
@@ -9,21 +19,21 @@ function Nav() {
                 </a>
             </h2>
             <nav>
-                <ul>
-                    <li>
-                        <a data-testid='about' href="#about">
-                            About Me
-                        </a>
-                    </li>
-                    <li>
-                        <span>Contact</span>
-                    </li>
-                    <li>
-                            <span>Portfolio</span>
-                    </li>
-                    <li>
-                        <span>Resume</span>
-                    </li>
+                <ul className="flex-row">
+                    {pages.map((page) => (
+                        <li
+                        className={`mx-1 ${
+                            currentPage.name === page.name && 'navActive'
+                            }`}
+                        key={page.name}
+                        >
+                            <span onClick={() => {
+                                setCurrentPage(page);
+                            }} >
+                                {page.name}
+                            </span>
+                        </li>
+                    ))}
                 </ul>
             </nav>
         </header>
