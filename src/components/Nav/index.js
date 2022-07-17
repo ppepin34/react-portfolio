@@ -13,11 +13,7 @@ function Nav(props) {
 
     return (
         <header>
-            <h2>
-                <a data-testid='link' href="/">
-                    Phil Pepin
-                </a>
-            </h2>
+            <h1>Phil Pepin</h1>
             <nav>
                 <ul className="flex-row">
                     {pages.map((page) => (
