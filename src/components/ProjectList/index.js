@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
 function ProjectList() {
+
+    // list of projects to be rendered
     const [projects] = useState([
         {
             name: 'Belize National Fire Service',
