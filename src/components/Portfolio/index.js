@@ -1,13 +1,12 @@
 import React from "react";
+import Project from "../Project";
 
 function Portfolio() {
     return(
         <section>
-            <h1>Portfolio</h1>
+            <h2>Portfolio</h2>
             <div>
-                <ul>
-                {/* map each project out with image, link to deployed, link to github*/}
-                </ul>
+                <Project />
             </div>
         </section>
     )
