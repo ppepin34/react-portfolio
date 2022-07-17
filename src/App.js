@@ -6,20 +6,6 @@ import ContactForm from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
 
-function renderPage(page) {
-  switch (page.name) {
-    case "About Me":
-      return <About />
-    case "Portfolio":
-      return <Portfolio />
-    case "Contact Me":
-      return <ContactForm />
-    case "Resume":
-      return <Resume />
-  }
-
-}
-
 function App() {
   const [pages] = useState([
     {
@@ -36,12 +22,19 @@ function App() {
     }
   ]);
 
-  // function renderPage(page) {
-  //   switch (page.name) {
-  //     case "About Me":
-  //       return <About />
-  //   }
-  // }
+  function renderPage(page) {
+    switch (page.name) {
+      case "About Me":
+        return <About />
+      case "Portfolio":
+        return <Portfolio />
+      case "Contact Me":
+        return <ContactForm />
+      case "Resume":
+        return <Resume />
+    }
+  
+  }
 
   const [currentPage, setCurrentPage] = useState(pages[0]);
   return (
