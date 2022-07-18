@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import Portfolio from "../Portfolio";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+// import { imageOne, imageTwo, imageThree, imageFour} from './assets/portfolio';
 
 function Project() {
 
@@ -29,11 +31,19 @@ function Project() {
 
     return (
         <div>
-            {projects.map((projects, id) => (
-                <Portfolio
-                    project={projects}
-                    key={"project" + id}
-                />
+            {projects.map((project) => (
+                <div>
+                    <h3>{project.name}</h3>
+                    <img
+                        src={require(`../../assets/portfolio/${project.github}.jpg`)}
+                        alt={project.name}
+                        key={project.name}
+                    />
+                    <a href={project.deploy} target="_blank" rel="noreferrer">Deployed application</a>
+                    <a href={`https://github.com/ppepin34/${project.github}`} target="_blank" rel="noreferrer">
+                        <FontAwesomeIcon icon={faGithub} size="lg" />
+                    </a>
+                </div>
             ))}
         </div>
     )
