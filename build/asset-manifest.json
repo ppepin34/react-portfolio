@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.b823bcb2.css",
+    "main.js": "/react-portfolio/static/js/main.1bf196f6.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/mongo-social-media-challenge.jpg": "/react-portfolio/static/media/mongo-social-media-challenge.858d7129b45db8a3eade.jpg",
+    "static/media/fire-dept.jpg": "/react-portfolio/static/media/fire-dept.13c88d31afad2282228a.jpg",
+    "static/media/work-day-scheduler.jpg": "/react-portfolio/static/media/work-day-scheduler.ece136c7d2ad9579f3cb.jpg",
+    "static/media/portrait.jpg": "/react-portfolio/static/media/portrait.ce9e4dc55e6bfde76510.jpg",
+    "static/media/note-taker.jpg": "/react-portfolio/static/media/note-taker.50195ef63acfa30c2cfd.jpg",
+    "static/media/weather-dashboard.jpg": "/react-portfolio/static/media/weather-dashboard.b165652e0526d4e24c90.jpg",
+    "static/media/coding-quiz.jpg": "/react-portfolio/static/media/coding-quiz.dfb5d61b9a6197bf3168.jpg",
+    "index.html": "/react-portfolio/index.html",
+    "main.b823bcb2.css.map": "/react-portfolio/static/css/main.b823bcb2.css.map",
+    "main.1bf196f6.js.map": "/react-portfolio/static/js/main.1bf196f6.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b823bcb2.css",
+    "static/js/main.1bf196f6.js"
+  ]
+}
