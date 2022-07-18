@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { validateEmail } from '../../utils/helpers';
+// import emailjs from 'emailjs';
 
 function ContactForm() {
+    // const form = useRef();
+
     const [formState, setFormState] = useState({ name: '', email: '', message: '', });
     const [errorMessage, setErrorMessage] = useState('');
     const { name, email, message } = formState;
@@ -28,6 +31,12 @@ function ContactForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        // emailjs.sendForm('contact_service', 'contact_form', form.current, 'xmtdeWr8o_5z-biSj')
+        //     .then((result) => {
+        //         console.log(result.text);
+        //     }, (error) => {
+        //         console.log(error.text);
+        //     });
         if (!errorMessage) {
             setFormState({ [e.target.name]: e.target.value });
             console.log('Form', formState);
@@ -37,7 +46,7 @@ function ContactForm() {
     console.log(formState);
     return (
         <section>
-            <h2 data-testid="h1tag">Contact Me</h2>
+            <h2>Contact Me</h2>
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name:</label>
@@ -49,7 +58,7 @@ function ContactForm() {
                 </div>
                 <div>
                     <label htmlFor="message">Message:</label>
-                    <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+                    <textarea name="message" style={{ width: 200 }} rows="5" defaultValue={message} onBlur={handleChange} />
                 </div>
                 {errorMessage && (
                     <div>

@@ -15,7 +15,7 @@ function Nav(props) {
         <header>
             <h1>Phil Pepin</h1>
             <nav>
-                <ul className="flex-row">
+                <ul className="flex-row px-1">
                     {pages.map((page) => (
                         <li
                         className={`mx-1 ${

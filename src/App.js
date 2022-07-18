@@ -5,6 +5,7 @@ import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [pages] = useState([
