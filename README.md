@@ -34,7 +34,7 @@
   If you have any questions, please reach out to me at at the following places:
   
   - ppepin34@gmail.com
-  - [github](github.com/ppepin34)
-  - [deployed app](ppepin34.github.io/react-portfolio)
+  - [github](https://github.com/ppepin34)
+  - [deployed app](https://ppepin34.github.io/react-portfolio)
 
   
