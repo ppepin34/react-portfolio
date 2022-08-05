@@ -10,33 +10,45 @@ function Project() {
     // list of projects to be rendered
     const [projects] = useState([
         {
+            name: 'Cross Platforum',
+            github: 'Jefid/cross-platforum',
+            asset: 'crossplatforum',
+            deploy: 'https://infinite-mesa-70815.herokuapp.com/'
+        },
+        {
             name: 'Belize National Fire Service',
-            github: 'fire-dept',
+            github: 'ppepin34/fire-dept',
+            asset: 'fire-dept',
             deploy: 'https://belize-fire-dept.herokuapp.com/'
         },
         {
             name: 'Coding Quiz',
-            github: 'coding-quiz',
+            github: 'ppepin34/coding-quiz',
+            asset: 'coding-quiz',
             deploy: 'https://ppepin34.github.io/coding-quiz/'
         },
         {
             name: 'Weather Dashboard',
-            github: 'weather-dashboard',
+            github: 'ppepin34/weather-dashboard',
+            asset: 'weather-dashboard',
             deploy: 'https://ppepin34.githhub.io/weather-dashboard'
         },
         {
             name: 'Work Day Scheduler',
-            github: 'work-day-scheduler',
+            github: 'ppepin34/work-day-scheduler',
+            asset: 'work-day-scheduler',
             deploy: 'https://ppepin34.github.io/work-day-scheduler/'
         },
         {
             name: 'Note Taker',
-            github: 'note-taker',
+            github: 'ppepin34/note-taker',
+            asset: 'note-taker',
             deploy: 'https://express-challenge-ppp.herokuapp.com/'
         },
         {
             name: 'MongoDB Social Media Back-end',
-            github: 'mongo-social-media-challenge',
+            github: 'ppepin34/mongo-social-media-challenge',
+            asset: 'mongo-social-media-challenge',
             deploy: 'https://youtu.be/fHjsdPPgswc'
         }
     ]);
@@ -51,7 +63,7 @@ function Project() {
                         </Row>
                         <Row>
                             <img
-                                src={require(`../../assets/portfolio/${project.github}.jpg`)}
+                                src={require(`../../assets/portfolio/${project.asset}.jpg`)}
                                 alt={project.name}
                                 key={project.name}
                                 className="m-1 project-border"
@@ -60,7 +72,7 @@ function Project() {
                         <Row>
                             <Col className="text-center m-1"> <a href={project.deploy} target="_blank" rel="noreferrer">Deployed application  </a> </Col>
                             <Col className="text-center m-1">
-                                <a href={`https://github.com/ppepin34/${project.github}`} target="_blank" rel="noreferrer">
+                                <a href={`https://github.com/${project.github}`} target="_blank" rel="noreferrer">
                                     <FontAwesomeIcon icon={faGithub} size="2xl" />
                                 </a>
                             </Col>

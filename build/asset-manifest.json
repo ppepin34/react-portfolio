@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.b823bcb2.css",
-    "main.js": "/react-portfolio/static/js/main.1bf196f6.js",
+    "main.js": "/react-portfolio/static/js/main.e309aa0d.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/mongo-social-media-challenge.jpg": "/react-portfolio/static/media/mongo-social-media-challenge.858d7129b45db8a3eade.jpg",
     "static/media/fire-dept.jpg": "/react-portfolio/static/media/fire-dept.13c88d31afad2282228a.jpg",
@@ -12,11 +12,11 @@
     "static/media/coding-quiz.jpg": "/react-portfolio/static/media/coding-quiz.dfb5d61b9a6197bf3168.jpg",
     "index.html": "/react-portfolio/index.html",
     "main.b823bcb2.css.map": "/react-portfolio/static/css/main.b823bcb2.css.map",
-    "main.1bf196f6.js.map": "/react-portfolio/static/js/main.1bf196f6.js.map",
+    "main.e309aa0d.js.map": "/react-portfolio/static/js/main.e309aa0d.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b823bcb2.css",
-    "static/js/main.1bf196f6.js"
+    "static/js/main.e309aa0d.js"
   ]
 }
