@@ -5,7 +5,7 @@ function Resume() {
         <div>
             <h2>Resume</h2>
 
-            <a href="https://drive.google.com/file/d/1YENmMd7LVaoaFYYmqSxkMYWAAyhQpR7-/view?usp=sharing" target="_blank" rel="noreferrer">
+            <a href="https://drive.google.com/file/d/1cWBlTPldKcemllnTw_VLDagZK__46Yu7/view?usp=sharing" target="_blank" rel="noreferrer">
                 My resume is available for viewing and download as a pdf here.
             </a>
 
